@@ -24,3 +24,9 @@
 %text-align-center {
     text-align: center;
 }
+
+%space_evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
