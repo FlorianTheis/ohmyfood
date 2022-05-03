@@ -1,2 +1,71 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* couleur principales du site */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap");
+.nav_logsearch, header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
+.description_box {
+  text-align: center;
+}
+
+.nav_base {
+  width: 100%;
+  background-color: #eaeaea;
+  padding: 15px 0 15px 0;
+}
+
+.nav__logo {
+  margin-right: 10px;
+}
+
+.nav__search {
+  border: none;
+  background-color: #eaeaea;
+  width: 120px;
+}
+
+header {
+  font-family: 'Shrikhand', cursive;
+  -webkit-box-shadow: 0 0 0.5rem;
+          box-shadow: 0 0 0.5rem;
+  padding: 0.2rem;
+  margin: 0;
+  position: relative;
+}
+
+#description {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.description_box {
+  background-color: #f6f6f6;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.description__button {
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79da));
+  background-image: linear-gradient(to top, #9356DC, #ff79da);
+}
+
+.description__button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.9;
+}
+/*# sourceMappingURL=style.css.map */

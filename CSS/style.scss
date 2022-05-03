@@ -1,4 +1,63 @@
-@import './_variables.scss';
-@import './mixins.scss';
+@import './_variables';
 @import './placeholders';
+@import './mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap');
+
+.nav_logsearch {
+   @extend %flex-center
+    
+}
+
+.nav_base {
+    width: 100%;
+    background-color: $grey;
+    padding: 15px 0 15px 0;
+
+}
+
+.nav__logo {
+    margin-right: 10px;
+}
+
+.nav__search {
+    border: none;
+    background-color: $grey;
+    width : 120px;
+    
+}
+
+header {
+    font-family: 'Shrikhand', cursive;
+    @extend %flex-center;
+    box-shadow: 0 0 0.5rem;
+    padding: 0.2rem;
+    margin: 0;
+    position: relative;
+}
+
+#description {
+    box-sizing: border-box;
+}
+.description_box {
+    background-color: $color-block;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    @extend %text-align-center
+}
+
+.description__button {
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-image: linear-gradient(to top, #9356DC, #ff79da);
+}
+
+.description__button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    opacity: 0.9;
+}
 
