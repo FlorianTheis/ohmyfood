@@ -30,3 +30,8 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
+%column_items {
+    display: flex;
+    flex-direction: column;
+}
