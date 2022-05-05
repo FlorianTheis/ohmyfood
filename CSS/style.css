@@ -1,5 +1,6 @@
 /* couleur principales du site */
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .nav_logsearch, .header_accueil {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,6 +39,16 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.fonctionnement--h2, .restaurant--h2 {
+  padding-top: 2rem;
+  padding-bottom: 0;
+  margin: 1rem;
+}
+
+main, footer {
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -142,12 +153,6 @@ a {
   padding-bottom: 15%;
 }
 
-.restaurant--h2 {
-  padding-top: 2rem;
-  padding-bottom: 0;
-  margin: 1rem;
-}
-
 .card_rest {
   background-color: white;
   height: 220px;
@@ -211,4 +216,23 @@ a {
 }
 
 /* FIN SECTION CARTES RESTAURANTS */
+/* footer */
+footer {
+  background-color: #1e1e1e;
+  padding: 25px;
+  padding-top: 5px;
+  color: white;
+}
+
+footer h4 {
+  font-family: 'Shrikhand', cursive;
+}
+
+footer span {
+  color: white;
+}
+
+.margin_footer__elements {
+  margin-bottom: 5px;
+}
 /*# sourceMappingURL=style.css.map */

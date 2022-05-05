@@ -3,6 +3,11 @@
 @import './mixins';
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+main, footer {
+    font-family: 'Roboto', sans-serif;
+}
 
 .nav_logsearch {
    @extend %flex-center
@@ -67,6 +72,8 @@ a {
 
 #fonctionnement {
     box-sizing: border-box; }
+    .fonctionnement--h2 {
+        @extend %marge_titre_section }
     .fonctionnement_etape {
         background-color: #f2f2f2;
         padding: 3%;
@@ -100,9 +107,7 @@ background-color: $color-block;
 margin-top: 15%;
 padding-bottom: 15%;
 } .restaurant--h2 {
-    padding-top: 2rem;
-    padding-bottom: 0;
-    margin: 1rem; 
+    @extend %marge_titre_section 
     } .card_rest {
         background-color: $color-white;
         height: 220px;
@@ -149,5 +154,17 @@ padding-bottom: 15%;
                                         }
 /* FIN SECTION CARTES RESTAURANTS */ 
 
-
+/* footer */ 
+footer {
+    background-color: $color-footer;
+    padding: 25px;
+    padding-top: 5px;
+    color: $color-white;
+    }   footer h4 {
+        font-family: 'Shrikhand', cursive;
+        }  footer span {
+            color: $color-white;
+        }      .margin_footer__elements {
+                @include margin_footer__elements;
+                } 
 

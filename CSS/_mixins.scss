@@ -2,3 +2,9 @@
     cursor: pointer;
     transform: scale(1.02);
 }
+@mixin margin_footer__elements {
+    margin-bottom: 5px;
+}
+@mixin margin_footer {
+    top: 5%;
+}
