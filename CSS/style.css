@@ -1,7 +1,7 @@
 /* couleur principales du site */
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.nav_logsearch, .header_accueil {
+.nav_logsearch, .header_accueil, .fonctionnement_etape_block, .fonctionnement_etape_block span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,20 +25,8 @@
           align-items: center;
 }
 
-.description_box, .fonctionnement_etape span {
+.description_box {
   text-align: center;
-}
-
-.fonctionnement_etape {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 .fonctionnement--h2, .restaurant--h2 {
@@ -81,6 +69,7 @@ a {
   position: relative;
 }
 
+/* SECTION DESCRIPTION DE 'reservez..' jusqu'au bouton 'explorez nos restaurants' */
 #description {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -109,21 +98,25 @@ a {
   opacity: 0.9;
 }
 
+/* SECTION FONCTIONNEMENT */
 #fonctionnement {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.fonctionnement_etape {
+.fonctionnement_etape_block {
   background-color: #f2f2f2;
   padding: 3%;
-  height: auto;
+  height: 60px;
   margin: 1em auto;
   width: 85%;
   border-radius: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 0.2em 0.5em lightgrey;
+          box-shadow: 0 0.2em 0.5em lightgrey;
 }
 
-.fonctionnement_etape span {
+.fonctionnement_etape_block span {
   background-color: #9356DC;
   color: white;
   width: 1rem;
@@ -132,15 +125,21 @@ a {
   padding: 0.3em;
   border-radius: 50%;
   position: absolute;
-  left: 2%;
+  left: -0.7rem;
 }
 
-.fonctionnement_etape i {
+.fonctionnement_etape_block i {
   color: #7d7d7d;
   font-size: 22px;
+  margin-right: 5%;
 }
 
-.fonctionnement_etape:hover {
+.fonctionnement_etape_block p {
+  font-weight: bold;
+  margin-right: 10%;
+}
+
+.fonctionnement_etape_block:hover {
   cursor: pointer;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
@@ -155,7 +154,7 @@ a {
 
 .card_rest {
   background-color: white;
-  height: 220px;
+  height: 250px;
   margin-bottom: 50px;
   border-radius: 10px;
   margin: 1rem;
@@ -187,7 +186,7 @@ a {
   background-position: center;
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 180px;
   border-radius: 10px 10px 0 0;
 }
 
@@ -213,6 +212,12 @@ a {
 .card_rest__heart {
   margin-right: 20px;
   margin-top: 15px;
+}
+
+.card_rest:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 /* FIN SECTION CARTES RESTAURANTS */

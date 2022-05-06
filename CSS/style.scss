@@ -44,7 +44,7 @@ a {
     margin: 0;
     position: relative;
 }
-
+/* SECTION DESCRIPTION DE 'reservez..' jusqu'au bouton 'explorez nos restaurants' */ 
 #description {
     box-sizing: border-box;
 }
@@ -69,22 +69,24 @@ a {
     transform: scale(1.05);
     opacity: 0.9;
 }
-
+/* SECTION FONCTIONNEMENT */ 
 #fonctionnement {
     box-sizing: border-box; }
     .fonctionnement--h2 {
         @extend %marge_titre_section }
-    .fonctionnement_etape {
+    .fonctionnement_etape_block {
         background-color: #f2f2f2;
         padding: 3%;
-        height: auto;
+        height: 60px;
         margin: 1em auto;
         width: 85%;
         border-radius: 20px;
-        @extend %space_evenly; }
-            .fonctionnement_etape span {
+        @extend %flex-center;
+        position: relative;
+        box-shadow:0 0.2em 0.5em lightgrey;
+        }  .fonctionnement_etape_block span {
                 background-color: #9356DC;
-                @extend %text-align-center;
+                @extend %flex-center;
                 color: white;
                 width: 1rem;
                 height: 1rem;
@@ -92,16 +94,21 @@ a {
                 padding: 0.3em;
                 border-radius: 50%;
                 position: absolute;
-                left: 2%; }
-                .fonctionnement_etape i {
+                left: -0.7rem;
+                }
+                .fonctionnement_etape_block i {
                     color: #7d7d7d;
                     font-size: 22px;
-                }
-                .fonctionnement_etape:hover{
-                @include zoom;
-                }
-/* SECTION CARTES RESTAURANTS */ 
+                    margin-right: 5%;
+                    
+                } .fonctionnement_etape_block p {
+                    font-weight: bold;
+                    margin-right: 10%;
+                    }.fonctionnement_etape_block:hover{
+                        @include zoom;
+                        }
 
+/* SECTION CARTES RESTAURANTS */ 
 #Restaurants {
 background-color: $color-block;
 margin-top: 15%;
@@ -110,7 +117,7 @@ padding-bottom: 15%;
     @extend %marge_titre_section 
     } .card_rest {
         background-color: $color-white;
-        height: 220px;
+        height: 250px;
         margin-bottom: 50px;
         border-radius: 10px;
         margin: 1rem;
@@ -134,7 +141,7 @@ padding-bottom: 15%;
                     background-position: center;
                     position: relative;
                     width: 100%;
-                    height: 150px;
+                    height: 180px;
                     border-radius: 10px 10px 0 0 ; 
                     } .card_rest__description {
                         @extend %flex-between; 
@@ -151,6 +158,8 @@ padding-bottom: 15%;
                                     }  .card_rest__heart {
                                         margin-right: 20px;
                                         margin-top: 15px;
+                                        } .card_rest:hover {
+                                            @include zoom;
                                         }
 /* FIN SECTION CARTES RESTAURANTS */ 
 
