@@ -1,0 +1,13 @@
+/* footer */ 
+footer {
+    background-color: $color-footer;
+    padding: 25px;
+    padding-top: 5px;
+    color: $color-white;
+    }   footer h4 {
+        font-family: 'Shrikhand', cursive;
+        }  footer span {
+            color: $color-white;
+        }      .margin_footer__elements {
+                @include margin_footer__elements;
+                } 

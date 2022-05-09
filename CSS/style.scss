@@ -1,6 +1,9 @@
 @import './_variables';
 @import './placeholders';
 @import './mixins';
+@import './header';
+@import './main-pageaccueil';
+@import './footer';
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -10,13 +13,13 @@ main, footer {
 }
 
 .nav_logsearch {
-   @extend %flex-center
+    @extend %flex-center
     
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: $color-black;
 }
 .nav_base {
     width: 100%;
@@ -36,144 +39,13 @@ a {
     
 }
 
-.header_accueil {
-    font-family: 'Shrikhand', cursive;
-    @extend %flex-center;
-    box-shadow: 0 0 0.5rem;
-    padding: 0.2rem;
-    margin: 0;
-    position: relative;
-}
-/* SECTION DESCRIPTION DE 'reservez..' jusqu'au bouton 'explorez nos restaurants' */ 
-#description {
-    box-sizing: border-box;
-}
-.description_box {
-    background-color: $color-block;
-    padding-bottom: 40px;
-    padding-top: 20px;
-    @extend %text-align-center
-}
 
-.description__button {
-    color: white;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 2rem;
-    background-image: linear-gradient(to top, #9356DC, #ff79da);
+/* Page d'un restaurant */ 
+
+
+.img_page_restaurant {
+    object-fit: cover;
+    width: 100%;
+    background-position: center;
+    max-height: 20em;
 }
-
-.description__button:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-/* SECTION FONCTIONNEMENT */ 
-#fonctionnement {
-    box-sizing: border-box; }
-    .fonctionnement--h2 {
-        @extend %marge_titre_section }
-    .fonctionnement_etape_block {
-        background-color: #f2f2f2;
-        padding: 3%;
-        height: 60px;
-        margin: 1em auto;
-        width: 85%;
-        border-radius: 20px;
-        @extend %flex-center;
-        position: relative;
-        box-shadow:0 0.2em 0.5em lightgrey;
-        }  .fonctionnement_etape_block span {
-                background-color: #9356DC;
-                @extend %flex-center;
-                color: white;
-                width: 1rem;
-                height: 1rem;
-                font-size: 0.8rem;
-                padding: 0.3em;
-                border-radius: 50%;
-                position: absolute;
-                left: -0.7rem;
-                }
-                .fonctionnement_etape_block i {
-                    color: #7d7d7d;
-                    font-size: 22px;
-                    margin-right: 5%;
-                    
-                } .fonctionnement_etape_block p {
-                    font-weight: bold;
-                    margin-right: 10%;
-                    }.fonctionnement_etape_block:hover{
-                        @include zoom;
-                        }
-
-/* SECTION CARTES RESTAURANTS */ 
-#Restaurants {
-background-color: $color-block;
-margin-top: 15%;
-padding-bottom: 15%;
-} .restaurant--h2 {
-    @extend %marge_titre_section 
-    } .card_rest {
-        background-color: $color-white;
-        height: 250px;
-        margin-bottom: 50px;
-        border-radius: 10px;
-        margin: 1rem;
-        margin-top: 5%;
-        box-shadow: 0 2px 10px #cecece;
-        }  .card_rest_pictures {
-            position: relative;
-            width: 100%;
-            }  .card_rest__new {
-                position: absolute;
-                background-position: center;
-                color: #147c62;
-                background-color: #99e2d0;
-                padding: 8px 11px 8px 11px;
-                font-size: 18px;
-                top: 5%;
-                right: 5%;
-                border-radius: 5px;
-                } .card_rest__image {
-                    object-fit: cover;
-                    background-position: center;
-                    position: relative;
-                    width: 100%;
-                    height: 180px;
-                    border-radius: 10px 10px 0 0 ; 
-                    } .card_rest__description {
-                        @extend %flex-between; 
-                        margin-bottom: 5%;
-                        } .card_rest__title{
-                            display: block;
-                            }  .card_rest__title h3 {
-                                margin-bottom: 0;
-                                padding-left: 15px;
-                                margin-top: 8%;
-                                }  .card_rest__title span {
-                                    margin-top: 2px;
-                                    padding-left: 15px;
-                                    }  .card_rest__heart {
-                                        margin-right: 20px;
-                                        margin-top: 15px;
-                                        } .card_rest:hover {
-                                            @include zoom;
-                                        }
-/* FIN SECTION CARTES RESTAURANTS */ 
-
-/* footer */ 
-footer {
-    background-color: $color-footer;
-    padding: 25px;
-    padding-top: 5px;
-    color: $color-white;
-    }   footer h4 {
-        font-family: 'Shrikhand', cursive;
-        }  footer span {
-            color: $color-white;
-        }      .margin_footer__elements {
-                @include margin_footer__elements;
-                } 
-

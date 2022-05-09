@@ -8,3 +8,11 @@
 @mixin margin_footer {
     top: 5%;
 }
+
+@mixin relative {
+    position: relative;
+}
+
+@mixin absolute {
+    position: absolute;
+}
