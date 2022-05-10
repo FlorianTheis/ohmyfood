@@ -1,0 +1,22 @@
+.nav_logsearch {
+    @extend %flex-center
+    
+}
+
+.nav_base {
+    width: 100%;
+    background-color: $grey;
+    padding: 15px 0 15px 0;
+
+}
+
+.nav__logo {
+    margin-right: 10px;
+}
+
+.nav__search {
+    border: none;
+    background-color: $grey;
+    width : 120px;
+    
+}

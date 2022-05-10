@@ -2,7 +2,7 @@
 /* couleur principales du site */
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.header, .fonctionnement_etape_block, .fonctionnement_etape_block span, .nav_logsearch {
+.header, .fonctionnement_etape_block, .fonctionnement_etape_block span, #Menu .button, .nav_logsearch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +14,7 @@
           align-items: center;
 }
 
-.card_rest__description {
+.card_rest__description, #Menu .Menu__titre, #Menu .menu-block-span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,30 +208,110 @@
 /* footer */
 footer {
   background-color: #1e1e1e;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 25px;
   padding-top: 5px;
   color: white;
 }
 
-footer h4 {
+footer h5 {
   font-family: 'Shrikhand', cursive;
+  font-weight: lighter;
 }
 
 footer span {
   color: white;
 }
 
-.margin_footer__elements {
-  margin-bottom: 5px;
+.margin-footer {
+  margin-bottom: 10px;
 }
 
-main, footer {
-  font-family: 'Roboto', sans-serif;
+.margin-footer__span {
+  margin-left: 6px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+.img_page_restaurant {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  background-position: center;
+  max-height: 20em;
+  z-index: -1;
+  position: relative;
+}
+
+#Menu {
+  background-color: #f6f6f6;
+  margin-top: -3em;
+  border-radius: 35px 35px 0 0;
+  padding-bottom: 5em;
+}
+
+#Menu .Menu__titre {
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+}
+
+#Menu .Menu__titre h2 {
+  font-family: 'Shrikhand', cursive;
+  margin-right: 5px;
+}
+
+#Menu .container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#Menu .container h4 {
+  color: #7b7b7b;
+  font-weight: 400;
+  margin: 0.5em auto;
+  padding-left: 1.5em;
+}
+
+#Menu .sidebar {
+  height: 0.2em;
+  width: 2.5em;
+  background-color: #99e2d0;
+  margin-left: 1.5em;
+}
+
+#Menu .menu-block {
+  margin-bottom: 3rem;
+}
+
+#Menu .menu-block-card {
+  background-color: white;
+  position: relative;
+  width: 95%;
+  margin: 1em auto 1em auto;
+  border-radius: 10px;
+  height: 5em;
+  -webkit-box-shadow: 1px 1px 8px #c2c2c2;
+          box-shadow: 1px 1px 8px #c2c2c2;
+}
+
+#Menu .menu-block-elements {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+#Menu .menu-block-elements h3 {
+  margin: 0.6em auto;
+}
+
+#Menu .menu-block-span {
+  margin-right: 10px;
+}
+
+#Menu .menu-block-span__euro {
+  font-weight: bold;
+}
+
+#Menu .menu-block-span__description {
+  font-size: 0.9rem;
 }
 
 .nav_base {
@@ -250,12 +330,12 @@ a {
   width: 120px;
 }
 
-/* Page d'un restaurant */
-.img_page_restaurant {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  background-position: center;
-  max-height: 20em;
+main, footer {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,8 @@
 @import './header';
 @import './main-pageaccueil';
 @import './footer';
+@import './main-page-restau';
+@import './nav';
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -12,40 +14,8 @@ main, footer {
     font-family: 'Roboto', sans-serif;
 }
 
-.nav_logsearch {
-    @extend %flex-center
-    
-}
-
 a {
     text-decoration: none;
     color: $color-black;
 }
-.nav_base {
-    width: 100%;
-    background-color: $grey;
-    padding: 15px 0 15px 0;
 
-}
-
-.nav__logo {
-    margin-right: 10px;
-}
-
-.nav__search {
-    border: none;
-    background-color: $grey;
-    width : 120px;
-    
-}
-
-
-/* Page d'un restaurant */ 
-
-
-.img_page_restaurant {
-    object-fit: cover;
-    width: 100%;
-    background-position: center;
-    max-height: 20em;
-}

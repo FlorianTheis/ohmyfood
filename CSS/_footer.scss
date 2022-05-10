@@ -1,13 +1,17 @@
 /* footer */ 
 footer {
     background-color: $color-footer;
+    box-sizing: border-box;
     padding: 25px;
     padding-top: 5px;
     color: $color-white;
-    }   footer h4 {
+    }   footer h5 {
         font-family: 'Shrikhand', cursive;
+        font-weight: lighter;
         }  footer span {
             color: $color-white;
-        }      .margin_footer__elements {
+        }      .margin-footer {
                 @include margin_footer__elements;
-                } 
+                } .margin-footer__span {
+                    margin-left: 6px;
+                }

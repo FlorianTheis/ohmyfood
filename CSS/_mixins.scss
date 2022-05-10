@@ -3,7 +3,7 @@
     transform: scale(1.02);
 }
 @mixin margin_footer__elements {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 @mixin margin_footer {
     top: 5%;
@@ -15,4 +15,8 @@
 
 @mixin absolute {
     position: absolute;
+}
+
+@mixin taille-description_menu {
+    font-size: 0.9rem;
 }
