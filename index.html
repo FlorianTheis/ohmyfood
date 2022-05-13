@@ -24,15 +24,15 @@
     <main>
         <section id="description">
             <div class="description_box">
-                <h2>Réservez le menu qui<br>vous convient</h2>
-                <p>Découvrez des restaurants d'exeption, <br> séléctionnés par nos soins.</p>
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
                 <button class="description__button">Explorer nos restaurants</button>
             </div>
         </section>
         
         <section id="fonctionnement">
             <h2 class="fonctionnement--h2">Fonctionnement</h2>
-            <div>
+            <div class="fonctionnement_responsive">
                 <div class="fonctionnement_etape_block">
                     <span>1</span>
                     <i class="fa-solid fa-mobile-screen-button"></i>
@@ -56,8 +56,8 @@
         <section id="Restaurants">
             <h2 class="restaurant--h2">Restaurants</h2>
 
-            <div> <!-- div qui vas regrouper toutes les card-->
-
+        <div> <!-- div qui vas regrouper toutes les card-->
+            <div class="card_responsive">
                 <div class="card_rest"> <!--div d'une card (avec le lien)-->
                     <a href="#">
                     <div class="card_rest__pictures">
@@ -73,8 +73,11 @@
                             <span>Ménilmontant</span>
                         </div>
                         <div class="card_rest__heart">
-                            <i class=" fa-2x fa-regular fa-heart"></i>
+                            <i class="fa-2x far fa-heart"></i>
+                            <i class="fa-2x fas fa-heart"></i>
                         </div>
+                            
+                        
                     </div>
                 </div> <!--fin de la div qui regroupe l'ensemble d'une card-->
 
@@ -93,13 +96,14 @@
                             <span>Charonne</span>
                         </div>
                         <div class="card_rest__heart">
-                            <i class=" fa-2x fa-regular fa-heart"></i>
+                            <i class=" fa-2x far fa-heart"></i>
+                            <i class=" fa-2x fas fa-heart"></i>
                         </div>
                     </div>
                 </div> <!--fin de la div qui regroupe l'ensemble d'une card-->
-
+            </div>
                 
-
+            <div class="card_responsive">
                 <div class="card_rest"> <!--div d'une card (avec le lien)-->
                     <a href="a_la_française.html">
                     <div>
@@ -111,7 +115,8 @@
                                 <span>Cité Rouge</span>
                             </div>
                             <div class="card_rest__heart">
-                                <i class=" fa-2x fa-regular fa-heart"></i>
+                                <i class=" fa-2x far fa-heart"></i>
+                                <i class=" fa-2x fas fa-heart"></i>
                             </div>
                         </div>
                     </div>
@@ -129,19 +134,21 @@
                                 <span>Folie-Méricourt</span>
                             </div>
                             <div class="card_rest__heart">
-                                <i class=" fa-2x fa-regular fa-heart"></i>
+                                <i class=" fa-2x far fa-heart"></i>
+                                <i class=" fa-2x fas fa-heart"></i>
                             </div>
                         </div>
                     </div>
                     </a>
                 </div> <!--fin de la div qui regroupe l'ensemble d'une card-->
-            </div> <!--fin de la div qui regroupe toutes les card-->
+            </div>
+        </div> <!--fin de la div qui regroupe toutes les card-->
         </section>
     </main>
     <footer>
         
         <h5>ohmyfood</h5>
-        <div>
+        <div class="footer_responsive">
             <div class="margin-footer">
                 <i class="fa-solid fa-utensils"></i>
                 <a href="#"><span class="margin-footer__span">Proposer un restaurant</span></a>

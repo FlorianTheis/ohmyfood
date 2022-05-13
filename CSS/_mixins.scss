@@ -20,3 +20,7 @@
 @mixin taille-description_menu {
     font-size: 0.9rem;
 }
+
+@mixin linear-gradient {
+    background-image: linear-gradient( to top, #9356DC, #ff79da);
+}

@@ -65,6 +65,11 @@
   padding-top: 20px;
 }
 
+.description_box p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .description__button {
   color: white;
   padding: 1rem 2rem;
@@ -194,17 +199,113 @@
 }
 
 .card_rest__heart {
-  margin-right: 20px;
-  margin-top: 15px;
+  margin-right: 3rem;
+  margin-bottom: 20px;
 }
 
-.card_rest:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+.card_rest__heart i {
+  position: absolute;
 }
 
 /* FIN SECTION CARTES RESTAURANTS */
+/* tablette */
+@media screen and (min-width: 768px) {
+  .fonctionnement_responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .fonctionnement--h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .fonctionnement_etape_block {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 15px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .fonctionnement_etape_block p {
+    margin-right: 0;
+  }
+  #Restaurants {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+  .restaurant--h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card_rest {
+    width: 70%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .card_responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+  .card_rest {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    height: 350px;
+  }
+  .card_rest__image {
+    height: 280px;
+  }
+  .restaurant--h2 {
+    font-size: xx-large;
+  }
+}
+
+/* animation coeur */
+.fas {
+  color: transparent;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79da));
+  background-image: linear-gradient(to top, #9356DC, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  -webkit-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+}
+
+.fas:hover {
+  opacity: 1;
+}
+
 /* footer */
 footer {
   background-color: #1e1e1e;
@@ -230,6 +331,37 @@ footer span {
 
 .margin-footer__span {
   margin-left: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 3rem;
+  }
+  footer h5 {
+    font-size: large;
+  }
+  .footer_responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .margin-footer {
+    margin-right: 2rem;
+  }
 }
 
 .img_page_restaurant {
@@ -312,6 +444,37 @@ footer span {
 
 #Menu .menu-block-span__description {
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+  .Menu__titre h2 {
+    margin-left: 3rem;
+  }
+  .Menu__titre i {
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu_responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container {
+    width: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 }
 
 .nav_base {

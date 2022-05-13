@@ -7,7 +7,9 @@
     padding-bottom: 40px;
     padding-top: 20px;
     @extend %text-align-center
-}
+} .description_box p {
+    margin-left: 1rem;
+    margin-right: 1rem; }
 
 .description__button {
     color: white;
@@ -15,7 +17,7 @@
     font-size: 1rem;
     border: none;
     border-radius: 2rem;
-    background-image: linear-gradient(to top, #9356DC, #ff79da);
+    @include linear-gradient;
 }
 
 .description__button:hover {
@@ -110,9 +112,78 @@ padding-bottom: 15%;
                                     margin-top: 2px;
                                     padding-left: 15px;
                                     }  .card_rest__heart {
-                                        margin-right: 20px;
-                                        margin-top: 15px;
-                                        } .card_rest:hover {
-                                            @include zoom;
+                                        margin-right: 3rem;
+                                        margin-bottom: 20px;
+                                        } .card_rest__heart i {
+                                            @include absolute;
                                         } 
 /* FIN SECTION CARTES RESTAURANTS */ 
+
+
+/* tablette */ 
+@media screen and (min-width: 768px){ 
+    .fonctionnement_responsive { 
+        display: flex;
+        flex-direction: row;
+        
+    } .fonctionnement--h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } .fonctionnement_etape_block {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        height: 15px;
+        width: 100%;
+        border-radius: 10px;
+    } .fonctionnement_etape_block p {
+        margin-right: 0;
+    }
+
+
+    #Restaurants {
+        margin-top: 5%;
+        padding-bottom: 5%;
+    } .restaurant--h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } .card_rest {
+        width: 70%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    } .card_responsive {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+/* desktop */ 
+@media screen and (min-width:1024px) {
+ .card_rest {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    height: 350px;
+} .card_rest__image {
+    height: 280px;
+} .restaurant--h2 {
+    font-size: xx-large;
+}
+}
+
+/* animation coeur */ 
+
+.fas {
+    color: transparent;
+    @include linear-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 400ms ease-in;
+    &:hover  {
+        opacity: 1;
+    }
+} 
