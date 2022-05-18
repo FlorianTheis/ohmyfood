@@ -24,3 +24,23 @@
 @mixin linear-gradient {
     background-image: linear-gradient( to top, #9356DC, #ff79da);
 }
+
+@mixin animation-apparation {
+    @keyframes apparition {
+        0% {
+            transform: translateY(50%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    @for $i from 1 through 3{
+        &:nth-child(#{$i}) {
+            animation-delay: 100ms * $i;
+            }
+    }
+        animation: apparition 2s;
+        animation-fill-mode: both;
+}

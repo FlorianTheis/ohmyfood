@@ -132,6 +132,7 @@
   cursor: pointer;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+  background-color: #f2eafb;
 }
 
 /* SECTION CARTES RESTAURANTS */
@@ -298,8 +299,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  -webkit-transition: all 400ms ease-in;
-  transition: all 400ms ease-in;
+  -webkit-transition: all 550ms ease-in;
+  transition: all 550ms ease-in;
 }
 
 .fas:hover {
@@ -412,9 +413,14 @@ footer span {
 
 #Menu .menu-block {
   margin-bottom: 3rem;
+  overflow: hidden;
 }
 
 #Menu .menu-block-card {
+  -webkit-animation: apparition 2s;
+          animation: apparition 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   background-color: white;
   position: relative;
   width: 95%;
@@ -423,6 +429,47 @@ footer span {
   height: 5em;
   -webkit-box-shadow: 1px 1px 8px #c2c2c2;
           box-shadow: 1px 1px 8px #c2c2c2;
+}
+
+@-webkit-keyframes apparition {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#Menu .menu-block-card:nth-child(1) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+#Menu .menu-block-card:nth-child(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+#Menu .menu-block-card:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 #Menu .menu-block-elements {
@@ -500,5 +547,13 @@ main, footer {
 a {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (min-width: 1921px) {
+  html {
+    width: 80%;
+    margin-left: 10%;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

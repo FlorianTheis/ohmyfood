@@ -1,3 +1,5 @@
+
+
 .img_page_restaurant {
     object-fit: cover;
     width: 100%;
@@ -8,7 +10,7 @@
 }
 
 #Menu {
-  background-color: $color-block;
+    background-color: $color-block;
     margin-top: -3em;
     border-radius: 35px 35px 0 0;
     padding-bottom: 5em;
@@ -34,7 +36,10 @@
             }
             .menu-block {
                 margin-bottom: 3rem;
+                overflow: hidden;
+                
             } .menu-block-card {
+                @include animation-apparation;
                 background-color: $color-white;
                 @include relative;
                 width: 95%;
@@ -42,6 +47,8 @@
                 border-radius: 10px;
                 height: 5em;
                 box-shadow: 1px 1px 8px $color-shadow-menu;
+                
+                
             } .menu-block-elements {
                 padding-top: 5px;
                 padding-left: 5px;
@@ -55,10 +62,12 @@
             } .button {
                 @extend %flex-center
             } .menu-block-span__description {
-               @include taille-description_menu;
+                @include taille-description_menu;
             }
         
 }
+
+
 
 @media screen and (min-width: 768px) {
     .container {
@@ -70,11 +79,6 @@
         margin-right: 3rem;
     }
     }
-
-
-
-
-
 
 @media screen and (min-width:1024px) {
     .menu_responsive {

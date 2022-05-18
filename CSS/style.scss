@@ -19,3 +19,12 @@ a {
     color: $color-black;
 }
 
+@media screen and (min-width: 1921px) {
+    html {
+        width: 80%;
+        margin-left: 10%;
+        height: 100%;
+        
+    }
+    
+}
