@@ -2,7 +2,7 @@
 /* couleur principales du site */
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.header, .fonctionnement_etape_block, .fonctionnement_etape_block span, #Menu .button, .nav_logsearch {
+.header, .fonctionnement_etape_block, .fonctionnement_etape_block span, .loader, #Menu .button, .nav_logsearch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,6 +36,22 @@
   margin: 1rem;
 }
 
+.loader_elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ANIMATION COEUR */
+/* ANIMATION TRANSITION BAS-HAUT CARTE RESTAURANT */
+/* ANIMATIONS LOADER */
 /* header accueil */
 .header {
   font-family: 'Shrikhand', cursive;
@@ -293,9 +309,9 @@
 
 /* animation coeur */
 .fas {
-  color: transparent;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79da));
   background-image: linear-gradient(to top, #9356DC, #ff79da);
+  color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -305,6 +321,102 @@
 
 .fas:hover {
   opacity: 1;
+}
+
+.loader {
+  position: fixed;
+  background-color: #f2eafb;
+  height: 100vh;
+  z-index: 1;
+  inset: 0;
+  -webkit-animation: disparition 200ms 3s forwards ease;
+          animation: disparition 200ms 3s forwards ease;
+}
+
+@-webkit-keyframes disparition {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes disparition {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+.loader_elements {
+  width: 15rem;
+}
+
+.loader_elements h1 {
+  font-size: 300%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79da));
+  background-image: linear-gradient(to top, #9356DC, #ff79da);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: 'Shrikhand', cursive;
+  -webkit-animation: bounce 2s;
+          animation: bounce 2s;
+  -webkit-animation-iteration-count: 4;
+          animation-iteration-count: 4;
+}
+
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.loader_elements i {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#ff79da));
+  background-image: linear-gradient(to top, #9356DC, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 /* footer */
@@ -458,18 +570,18 @@ footer span {
 }
 
 #Menu .menu-block-card:nth-child(1) {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
-}
-
-#Menu .menu-block-card:nth-child(2) {
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
 
+#Menu .menu-block-card:nth-child(2) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
 #Menu .menu-block-card:nth-child(3) {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 #Menu .menu-block-elements {

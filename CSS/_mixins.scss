@@ -25,6 +25,22 @@
     background-image: linear-gradient( to top, #9356DC, #ff79da);
 }
 
+/* ANIMATION COEUR */ 
+
+@mixin animation-heart {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 550ms ease-in;
+    &:hover  {
+        opacity: 1;
+    }
+}
+
+
+/* ANIMATION TRANSITION BAS-HAUT CARTE RESTAURANT */ 
+
 @mixin animation-apparation {
     @keyframes apparition {
         0% {
@@ -35,12 +51,53 @@
             transform: translateY(0);
             opacity: 1;
         }
+        
     }
     @for $i from 1 through 3{
         &:nth-child(#{$i}) {
-            animation-delay: 100ms * $i;
+            animation-delay: 200ms * $i;
             }
-    }
+    } 
         animation: apparition 2s;
         animation-fill-mode: both;
+    
+}
+
+/* ANIMATIONS LOADER */ 
+
+@mixin animation-loader {
+    @keyframes disparition {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0);
+        }
+    }
+    animation: disparition 200ms 3s forwards ease; 
+
+    
+}
+
+@mixin animation-titre-loader {
+    @keyframes bounce {
+        50% {
+            transform: scale(0.5);
+        }
+        100% {
+            transform: scale(1) ;
+        }
+    }
+        animation: bounce 2s;
+        animation-iteration-count: 4;
+    
+}
+
+@mixin animation-icone-loader {
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    animation: spin 2s infinite linear;
 }

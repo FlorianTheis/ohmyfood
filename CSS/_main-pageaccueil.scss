@@ -178,13 +178,40 @@ padding-bottom: 15%;
 /* animation coeur */ 
 
 .fas {
-    color: transparent;
     @include linear-gradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    opacity: 0;
-    transition: all 550ms ease-in;
-    &:hover  {
-        opacity: 1;
-    }
+    @include animation-heart;
 } 
+
+.loader {
+    @extend %flex-center;
+    position: fixed;
+    background-color: #f2eafb;
+    height: 100vh;
+    z-index: 1;
+    inset: 0;
+    @include animation-loader;
+    &_elements {
+        @extend %flex-column-center;
+        width: 15rem;
+    }
+    
+    &_elements h1 {
+        font-size: 300%;
+        @include linear-gradient;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-family: 'Shrikhand', cursive;
+        @include animation-titre-loader;
+    } &_elements i {
+        @include linear-gradient;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @include animation-icone-loader;
+        }
+    
+} 
+
+
+
