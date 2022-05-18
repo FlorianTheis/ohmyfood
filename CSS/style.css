@@ -367,10 +367,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   font-family: 'Shrikhand', cursive;
-  -webkit-animation: bounce 2s;
-          animation: bounce 2s;
-  -webkit-animation-iteration-count: 4;
-          animation-iteration-count: 4;
+  -webkit-animation: bounce 1.5s infinite linear;
+          animation: bounce 1.5s infinite linear;
 }
 
 @-webkit-keyframes bounce {
