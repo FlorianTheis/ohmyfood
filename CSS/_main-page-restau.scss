@@ -60,7 +60,6 @@
                 
             } .menu-block-elements h3 {
                 margin: 0.6em auto;
-                font-size: medium;
                 margin-top: 1.2rem;
                 
                 
@@ -126,7 +125,11 @@
     
 }
 
-
+.menu-block-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 
 
