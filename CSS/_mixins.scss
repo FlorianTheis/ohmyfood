@@ -101,3 +101,15 @@
     }
     animation: spin 2s infinite linear;
 }
+
+/* ANIMATION CHECK CARTE MENU */ 
+
+@mixin animation-icone-check {
+    @keyframes check{
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    animation: check 0.5s linear;    
+    
+}
