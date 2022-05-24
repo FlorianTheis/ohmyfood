@@ -529,10 +529,12 @@ footer span {
 
 #Menu .menu-block-card {
   overflow: hidden;
+  /* pour caché le check qui est hors de la carte */
   -webkit-animation: apparition 2s;
           animation: apparition 2s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+  /* animation apparation */
   background-color: white;
   position: relative;
   width: 95%;
@@ -584,6 +586,11 @@ footer span {
           animation-delay: 600ms;
 }
 
+#Menu .menu-block-card:nth-child(4) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
 #Menu .menu-block-elements {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -617,9 +624,9 @@ footer span {
   background-color: #99e2d0;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  margin-right: -4rem;
+  margin-right: -5rem;
   /* pour qu'il sorte de la carte */
-  width: 4rem;
+  width: 5rem;
   -webkit-transition: margin-right 0.5s;
   transition: margin-right 0.5s;
 }
@@ -686,6 +693,7 @@ footer span {
 }
 
 .menu-block-overflow {
+  /* class pour que le texte ne déforme pas la carte lors du CHECK */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -707,8 +715,9 @@ footer span {
   width: 120px;
 }
 
-main, footer {
-  font-family: 'Roboto', sans-serif;
+main,
+footer {
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -717,7 +726,8 @@ a {
 }
 
 @media screen and (min-width: 1921px) {
-  html, body {
+  html,
+  body {
     width: 80%;
     margin-left: 10%;
     height: 100%;
