@@ -529,7 +529,7 @@ footer span {
 
 #Menu .menu-block-card {
   overflow: hidden;
-  /* pour caché le check qui est hors de la carte */
+  /* pour cacher le check qui sort de la carte */
   -webkit-animation: apparition 2s;
           animation: apparition 2s;
   -webkit-animation-fill-mode: both;
@@ -728,8 +728,8 @@ a {
 @media screen and (min-width: 1921px) {
   html,
   body {
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    margin: auto;
     height: 100%;
   }
 }

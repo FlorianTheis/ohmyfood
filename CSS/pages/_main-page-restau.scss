@@ -39,7 +39,7 @@
                 overflow: hidden;
                 
             } .menu-block-card {
-                overflow: hidden; /* pour caché le check qui est hors de la carte */ 
+                overflow: hidden; /* pour cacher le check qui sort de la carte */ 
                 @include animation-apparation; /* animation apparation */ 
                 background-color: $color-white;
                 @include relative;
@@ -66,14 +66,14 @@
                 } .menu-block-elements span {
                 @include taille-description_menu;
                 } .menu-block-check{
-                background-color: #99e2d0;
+                background-color: $third-color;
                 padding-top: 1.5rem;
                 padding-bottom: 1.5rem;
                 margin-right: -5rem; /* pour qu'il sorte de la carte */ 
                 width: 5rem;
                 transition: margin-right 0.5s /* transition de 0.5 seconde quand le check reviens sur la carte */ 
                 } .menu-block-check i {
-                    color: white;
+                    color: $color-white;
                     @extend %flex-center;
                     font-size: 2em;
                     }.menu-block-card:hover .menu-block-check{ /* pour quand on passe la souris sur la carte le check reviens sur la carte*/ 

@@ -2,9 +2,9 @@
 @import "./placeholders";
 @import "./mixins";
 @import "./header";
-@import "./main-pageaccueil";
+@import "./pages/main-pageaccueil";
 @import "./footer";
-@import "./main-page-restau";
+@import "./pages/main-page-restau";
 @import "./nav";
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Shrikhand&display=swap");
@@ -23,8 +23,9 @@ a {
 @media screen and (min-width: 1921px) {
   html,
   body {
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
+    margin: auto;
     height: 100%;
   }
+  
 }

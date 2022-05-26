@@ -32,7 +32,7 @@
     .fonctionnement--h2 {
         @extend %marge_titre_section }
     .fonctionnement_etape_block {
-        background-color: #f2f2f2;
+        background-color: $color-bloc-focntionnement;
         padding: 3%;
         height: 60px;
         margin: 1em auto;
@@ -40,11 +40,11 @@
         border-radius: 20px;
         @extend %flex-center;
         @include relative;
-        box-shadow:0 0.2em 0.5em lightgrey;
+        box-shadow:0 0.2em 0.5em $color-lightgrey;
         }  .fonctionnement_etape_block span {
                 background-color: $primary-color;
                 @extend %flex-center;
-                color: white;
+                color: $color-white;
                 width: 1rem;
                 height: 1rem;
                 font-size: 0.8rem;
@@ -54,7 +54,7 @@
                 left: -0.7rem;
                 }
                 .fonctionnement_etape_block i {
-                    color: #7d7d7d;
+                    color: $color-icon-fonctionnement;
                     font-size: 22px;
                     margin-right: 5%;
                     
@@ -88,7 +88,7 @@ padding-bottom: 15%;
                 @include absolute;
                 background-position: center;
                 color: #147c62;
-                background-color: #99e2d0;
+                background-color: $third-color;
                 padding: 8px 11px 8px 11px;
                 font-size: 18px;
                 top: 5%;
@@ -186,7 +186,7 @@ padding-bottom: 15%;
 .loader {
     @extend %flex-center;
     position: fixed;
-    background-color: #f2eafb;
+    background-color: $color-hoverfonctionnement;
     height: 100vh;
     z-index: 1;
     inset: 0;
